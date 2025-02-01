@@ -60,10 +60,18 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/treatment, 2, TRUE)
 		H.change_stat("strength", 2)
+<<<<<<< HEAD
 		H.change_stat("endurance", 3)
 		H.change_stat("constitution", 2)
 		H.change_stat("perception", 3)
 		H.change_stat("intelligence", 2)
+=======
+		H.change_stat("endurance", 2)
+		H.change_stat("constitution", 3)
+		H.change_stat("perception", 3)
+		H.change_stat("intelligence", 3)
+
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 		if(H.mind.has_antag_datum(/datum/antagonist))
 			return
 		var/datum/antagonist/new_antag = new /datum/antagonist/purishep()

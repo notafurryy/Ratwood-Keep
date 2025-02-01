@@ -81,7 +81,12 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 		H.change_stat("strength", 2)
-		H.change_stat("endurance", 2)
+		H.change_stat("endurance", 1)
 		H.change_stat("constitution", 2)
+<<<<<<< HEAD
 		H.change_stat("perception", 1)
+=======
+		H.change_stat("perception", 2)
+		H.change_stat("speed", 1)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)

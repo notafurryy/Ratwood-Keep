@@ -30,8 +30,14 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.change_stat("intelligence", 1)
+<<<<<<< HEAD
 		H.change_stat("speed", 2)  
 		H.change_stat("strength", 1)
 		if(H.age == AGE_OLD)
+=======
+		H.change_stat("speed", 3)  
+		H.change_stat("strength", 2)
+		if(H.age == AGE_MIDDLEAGED)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)

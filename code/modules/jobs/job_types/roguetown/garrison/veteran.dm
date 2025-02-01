@@ -69,8 +69,13 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.change_stat("perception", 1)
+<<<<<<< HEAD
 		H.change_stat("intelligence", 4) //shitty stats from being old so they get an exception to the 6 stat point rule
 		H.change_stat("endurance", 2)
+=======
+		H.change_stat("intelligence", 4)
+		H.change_stat("endurance", 1)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)

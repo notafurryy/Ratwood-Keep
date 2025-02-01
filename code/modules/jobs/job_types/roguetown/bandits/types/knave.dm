@@ -36,6 +36,7 @@
 	mask = /obj/item/clothing/mask/rogue/facemask/steel
 	neck = /obj/item/clothing/neck/roguetown/coif
 	H.change_stat("strength", 1)
+	H.change_stat("constitution", 1)
 	H.change_stat("intelligence", -3)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 2) //It's all about speed and perception
@@ -63,8 +64,13 @@
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, -1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
+<<<<<<< HEAD
 			H.change_stat("strength", 1)
 			H.change_stat("perception", 2)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+=======
+			H.change_stat("strength", 2)
+			H.change_stat("perception", 1)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 	H.verbs |= /mob/proc/haltyell
 	H.ambushable = FALSE

@@ -28,7 +28,7 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	cloak = /obj/item/clothing/cloak/citywatch
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	armor = /obj/item/clothing/suit/roguetown/armor/citywatch
 	shoes = /obj/item/clothing/shoes/roguetown/armor
 	beltl = /obj/item/storage/keyring/town_watch
@@ -53,16 +53,28 @@
 	guard.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 	guard.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 	guard.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
+<<<<<<< HEAD
 	guard.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE) // no, you don't need to climb after antags, no other non archer guard role has 3 climbing.
 	guard.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
+=======
+	guard.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+	guard.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	guard.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 	guard.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	guard.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	guard.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
-	guard.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
+	guard.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
 	guard.change_stat("strength", 1)
 	guard.change_stat("endurance", 2)
 	guard.change_stat("perception", 2)
+	guard.change_stat("constitution", 1)
+	guard.change_stat("endurance", 1)
 	guard.change_stat("speed", 1)
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 /mob/proc/haltyell()
 	set name = "HALT!"
 	set category = "Noises"

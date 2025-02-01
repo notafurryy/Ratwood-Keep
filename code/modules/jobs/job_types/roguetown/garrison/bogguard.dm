@@ -119,17 +119,27 @@
 	bogger.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	bogger.change_stat("strength", 2)
+<<<<<<< HEAD
 	bogger.change_stat("perception", 1)
+=======
+	bogger.change_stat("perception", 2)
+	bogger.change_stat("constitution", 1)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 	bogger.change_stat("endurance", 2)
 	bogger.change_stat("speed", 1)
+
 /datum/outfit/job/roguetown/ranger
 	name = "Bog Ranger"
 
 /datum/outfit/job/roguetown/ranger/proc/assign_skills(mob/living/carbon/human/bogger)
+<<<<<<< HEAD
 	bogger.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
+=======
+	bogger.mind.adjust_skillrank(/datum/skill/combat/crossbows, 5, TRUE)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 	bogger.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
@@ -141,8 +151,10 @@
 	bogger.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+	bogger.change_stat("strength", 1)
 	bogger.change_stat("perception", 3)
 	bogger.change_stat("speed", 2)
-	bogger.change_stat("endurance", 1)
+	bogger.change_stat("constitution", 1)
+	bogger.change_stat("endurance", 2)

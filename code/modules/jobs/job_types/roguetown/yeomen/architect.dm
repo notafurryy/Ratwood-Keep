@@ -18,17 +18,20 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/kettle
 	mask = /obj/item/clothing/mask/rogue/spectacles/golden
+	neck = /obj/item/powderflask
 	armor = /obj/item/clothing/suit/roguetown/armor/workervest
 	shirt = /obj/item/clothing/suit/roguetown/shirt/grenzelhoft
 	wrists = /obj/item/storage/keyring/architect
-	backr = /obj/item/rogueweapon/pick/drill
-	backl = /obj/item/storage/backpack/rogue/backpack
+	backr = /obj/item/gun/ballistic/firearm/blunderbuss
+	backl = /obj/item/rogueweapon/pick/drill
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
+	beltl = /obj/item/ammo_holder/bullet/grapeshot
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shoes = /obj/item/clothing/shoes/roguetown/armor
 
 	if(H.mind)
+<<<<<<< HEAD
 		H.mind.adjust_skillrank(/datum/skill/craft/masonry, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
@@ -36,17 +39,33 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/engineering, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/labor/mining, 2, TRUE)
+=======
+		H.mind.adjust_skillrank(/datum/skill/labor/mining, 1, TRUE)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 		H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/firearms, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/labor/lumberjacking, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
+<<<<<<< HEAD
 
 		H.change_stat("strength", 1)
 		H.change_stat("intelligence", 2)
 		H.change_stat("endurance", 2)
+=======
+		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
+
+		H.change_stat("strength", 1)
+		H.change_stat("intelligence", 2)
+		H.change_stat("constitution", 1)
+		H.change_stat("speed", -1)
+		H.change_stat("endurance", 1)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 
 
 

@@ -23,7 +23,13 @@
 	backpack_contents = list(/obj/item/flint = 1, /obj/item/bait = 1, /obj/item/rogueweapon/huntingknife = 1)
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	if(H.mind)
+<<<<<<< HEAD
 		H.mind.adjust_skillrank(/datum/skill/craft/hunting, 4, TRUE)
+=======
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, pick(2,2,3), TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
@@ -34,13 +40,30 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+<<<<<<< HEAD
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+=======
+		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/hunting, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/labor/fishing, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
 		H.change_stat("intelligence", 1)
+<<<<<<< HEAD
 		H.change_stat("perception", 2)
 		H.change_stat("speed", 1)
 		if(H.age == AGE_OLD)
 			H.change_stat("perception", 2)
+=======
+		H.change_stat("perception", 3)
+		H.change_stat("speed", 1)
+		if(H.age != AGE_ADULT)
+>>>>>>> parent of 7dcaae702 (THE rebalancing)
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
