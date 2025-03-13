@@ -56,43 +56,47 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/stealing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/music, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 2, TRUE)
 			head = /obj/item/clothing/head/roguetown/bardhat
 			pants = /obj/item/clothing/under/roguetown/tights/random
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless
 			belt = /obj/item/storage/belt/rogue/leather
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
-			cloak = /obj/item/clothing/cloak/raincloak/red
+			cloak = /obj/item/clothing/cloak/raincloak/blue
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltl = /obj/item/ammo_holder/bomb/smokebombs
 			beltr = /obj/item/rogueweapon/huntingknife/idagger
 			head = /obj/item/clothing/head/roguetown/bardhat //with this hat, they will get all the pussy(or dick depending on preference(or both ig))
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/white
+			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/noblecoat
 			shoes = /obj/item/clothing/shoes/roguetown/shortboots
-			var/instrument = pick(0,1,2,3,4,5)
-			switch(instrument)
-				if(0)
-					backr = /obj/item/rogue/instrument/harp
-				if(1)
-					backr = /obj/item/rogue/instrument/lute
-				if(2)
-					backr = /obj/item/rogue/instrument/accord
-				if(3)
-					backr = /obj/item/rogue/instrument/guitar
-				if(4)
-					backr = /obj/item/rogue/instrument/flute
-				if(5)
-					backr = /obj/item/rogue/instrument/drum
+			backpack_contents = list(/obj/item/natural/feather = 1, /obj/item/paper = 1)
 			H.change_stat("intelligence", 2)
 			H.change_stat("perception", 2)
 			H.change_stat("speed", 2)
 			ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_BARDIC_TRAINING, TRAIT_GENERIC)
+			var/instruments = list(
+			"Harp" = /obj/item/rogue/instrument/harp,
+			"Lute" = /obj/item/rogue/instrument/lute,
+			"Accordion" = /obj/item/rogue/instrument/accord,
+			"Guitar" = /obj/item/rogue/instrument/guitar,
+			"Flute" = /obj/item/rogue/instrument/flute,
+			"Drum" = /obj/item/rogue/instrument/drum,
+			"Hurdy-Gurdy" = /obj/item/rogue/instrument/hurdygurdy,
+			"Viola" = /obj/item/rogue/instrument/viola)
+			var/instrument_choice = input("Choose your instrument.", "XYLIX") as anything in instruments
+			H.set_blindness(0)
+			if(instrument_choice && instruments[instrument_choice])
+				backr = instruments[instrument_choice]
+			else
+				backr = /obj/item/rogue/instrument/lute
 
 		if("Harlequin")
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)

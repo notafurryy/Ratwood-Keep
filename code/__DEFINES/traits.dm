@@ -16,6 +16,7 @@
 #define TRAIT_MEDIUMARMOR "Maille Training"
 #define TRAIT_HEAVYARMOR "Plate Training"
 #define TRAIT_DODGEEXPERT "Fast Reflexes"
+#define TRAIT_BARDIC_TRAINING "Bardic Training"
 #define TRAIT_DECEIVING_MEEKNESS "Deceiving Meekness"
 #define TRAIT_CRITICAL_RESISTANCE "Critical Resistance"
 #define TRAIT_CRITICAL_WEAKNESS "Critical Weakness"
@@ -131,6 +132,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_MEDIUMARMOR = "I can move freely in medium armor.",
 	TRAIT_HEAVYARMOR = "I can move freely in both heavy and medium armor.",
 	TRAIT_DODGEEXPERT = "I can dodge easily while only wearing light armor.",
+	TRAIT_BARDIC_TRAINING = "Xylixian inspiration grants my songs boons and ailments.",
 	TRAIT_DECEIVING_MEEKNESS = "People look at me and think I am a weakling. They are mistaken.",
 	TRAIT_CRITICAL_RESISTANCE = "I am resistant to wounds that would be life threatening to others.",
 	TRAIT_CRITICAL_WEAKNESS = span_danger("I am weak to wounds that others could survive."),
